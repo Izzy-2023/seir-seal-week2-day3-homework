@@ -1,0 +1,38 @@
+nav {
+    float: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 65px;
+    margin: 10px 10%;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(232, 248, 249);
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(232, 248, 249);
+    text-align: left;
+    font-size: 18px;
+}
+
+input[type=button1] {
+    background-color: rgb(0, 172, 164);
+    border: 1px;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    margin: 10px;
+    height: 40px;
+  }
+
