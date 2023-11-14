@@ -15,6 +15,19 @@ function oneDollar() {
     }
 }
 
+function fiveDollar() {
+    if (account < 25 && myTool === 'Rusty Scissors') {
+        account += 5;
+        moneyInAccount.splice(0, 1, account);
+        alert(`Great job! You have earned $${account} cutting lawns today! 
+        Your account is now $${account}.`);
+    } else if (myTool !== 'Rusty Scissors') {
+        alert("You don't own the tool that will pay you that much. Keep mowing!")
+    } else {
+        alert("You have earned enough money to upgrade your equipment! Visit the market to earn even faster.")
+    }
+}
+
 // Tool options for the player.
 let tools = [
     {   type: "Teeth",
