@@ -2,6 +2,13 @@ nav {
     float: center;
 }
 
+body {
+    display: block;
+    width: 100%;
+    background-image: url("https://peakmemory.files.wordpress.com/2014/06/cliufqx.jpg");
+    background-repeat: no-repeat;
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -36,3 +43,31 @@ input[type=button1] {
     height: 40px;
   }
 
+  input[type=button2] {
+    background-color: rgb(150, 184, 182);
+    border: 1px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 10px;
+    width: 150px;
+    height: 25px;
+    
+  }
+
+  .buttons {
+    font-family: 'Bree Serif', serif;
+    font-size: 12px;
+    border: 1px solid #1c4708;
+    border-radius: 5px;
+    text-align: left;
+}
+
+div img {
+    display: block;
+    float: top;
+    max-width: 200px;
+    height: 150px;
+    border: 1px solid #1c4708;
+    border-radius: 5px;
+}
