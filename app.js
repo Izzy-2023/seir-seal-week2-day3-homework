@@ -79,6 +79,11 @@ let tools = [
     {   type: "Gas Lawnmower",
         pay: 100,
     },
+    {
+        type: "Students",
+        pay: 250,
+        salary: 100,
+    }
 ];
 
 let myTool = "";
@@ -129,4 +134,19 @@ function buyStudents() {
         alert(`You have selected ${tools[4].type} as your tool. You can now cut lawns for $${tools[4].pay} an hour! 
         Your account is now $${account}.`);
     }
+}
+function payStudents() {
+    if (moneyInAccount < 100) {
+        alert(`You need more money before you can pay your ${tools[4].type}!!`);
+    } else {
+        document.getElementById('pay');
+        moneyInAccount.splice(0, 1, account -= 100);
+        alert(`Thanks for feeding the ${tools[4].type}`);
+    }
+}
+function returnToTop() {
+    window.scrollTo(0,0);
+}
+function returnToMiniGames() {
+    window.location.href = "http://spiano.dev/mini-games.html"
 }

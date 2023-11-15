@@ -10,51 +10,49 @@
 <body>
 
     <header>
-        <nav>
-            <a href="index.html">home</a>
-            <a href="market.html">market</a>
-        </nav> 
+
     </header>
 
     <section class="first">
         <h1> Landscaper Game</h1>
 
         <div>
-            <h3> Congratulations on starting your new Landscaper business!</h3>
+            <h3> Congratulations on starting your new Landscaper business!</h3> <br><br>
             <p> Using just your teeth, you can spend the day cutting lawns and make $1. You can do this as much as you want. </p> <br><br>
             <p> Push the work button to earn money! </p>
         </div>
         
         <form class="form"> 
-            <label><input class="buttons" type="button1" value="Cut for $1" onclick="oneDollar()"><label>
-            <label><input class="buttons" type="button1" value="Cut for $5" onclick="fiveDollar()"><label>
-            <label><input class="buttons" type="button1" value="Cut for $50" onclick="fiftyDollar()"/></label>
-            <label><input class="buttons" type="button1" value="Cut for $100" onclick="hundredDollar()"/></label>
-            <label><input class="buttons" type="button1" value="Cut for $250" onclick="twoFiftyDollar()"/></label>
+            <label><input class="buttons" type="button" value="Cut for $1" onclick="oneDollar()"><label>
+            <label><input class="buttons" type="button" value="Cut for $5" onclick="fiveDollar()"><label>
+            <label><input class="buttons" type="button" value="Cut for $50" onclick="fiftyDollar()"/></label>
+            <label><input class="buttons" type="button" value="Cut for $100" onclick="hundredDollar()"/></label>
+            <label><input class="buttons" type="button" value="Cut for $250" onclick="twoFiftyDollar()"/></label>
+            <label><input class="buttons" id="pay" type="button" value="Pay Students" onclick="payStudents()"/></label>
         </form>
     </section>
     <section class="second">
             <h2> Welcome to the Market!</h2>
-            <h4> Here you can to your tools. </h4>
+            <h3> Here you can buy tools. </h3>
             <div class="market">
-                <label><input id="scissors" class="buttons" type="button2" value="Scissors for $5"
+                <label><input id="scissors" class="buttons2" type="button" value="Scissors for $5"
                     onclick="rustyScissors()"/></label><br>
                 <img src="https://media.istockphoto.com/id/629827600/photo/wide-open-old-tailor-scissors-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=j2k-VGhFBFsHSIv-cYNADshDMS950I-kAbxGEf9lUr8="
                      alt="rusty scissors">
             </div>
             <div class="market">
-                <label><input id="push-lawn" class="buttons" type="button2" value="Push Lawnmower for $25" onclick="pushLawnmower()"/></label><br>
+                <label><input id="push-lawn" class="buttons2" type="button" value="Push Lawnmower for $25" onclick="pushLawnmower()"/></label><br>
                 <img src="https://st2.depositphotos.com/1006009/7350/i/450/depositphotos_73502659-stock-photo-hand-lawn-mower-close-up.jpg" alt="">
             </div>
 
     <div class="market">
-        <label><input id="gas-lawn" class="buttons" type="button2" value="Gas Lawnmower for $250"
+        <label><input id="gas-lawn" class="buttons2" type="button" value="Gas Lawnmower for $250"
             onclick="gasLawnmower()"/></label> <br>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWdj9yS5PA2o-NHjrkCZj01fxJXgbzX1l9g&s"
              alt="">
     </div>
     <div class="market">
-        <label><input id="students" class="buttons" type="button2" value="Students for $500"
+        <label><input id="students" class="buttons2" type="button" value="Students for $500"
             onclick="buyStudents()"/></label><br>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtQGGUYof36oQ7rPMk80210iHlR_-_5lgOwQ&s"
          alt="">
