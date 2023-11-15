@@ -27,6 +27,18 @@ function fiveDollar() {
         alert("You have earned enough money to upgrade your equipment! Visit the market to earn even faster.")
     }
 }
+function fiftyDollar() {
+    if (account < 250 && myTool === 'Push Lawnmower') {
+        account += 50;
+        moneyInAccount.splice(0, 1, account);
+        alert(`Great job! You have earned $${account} cutting lawns today! 
+        Your account is now $${account}.`);
+    } else if (myTool !== 'Push Lawnmower') {
+        alert("You don't own the tool that will pay you that much. Keep mowing!")
+    } else {
+        alert("You have earned enough money to upgrade your equipment! Visit the market to earn even faster.")
+    }
+}
 
 // Tool options for the player.
 let tools = [
@@ -38,6 +50,9 @@ let tools = [
     },
     {   type: "Push Lawnmower",
         pay: 25,
+    },
+    {   type: "Gas Lawnmower",
+        pay: 100,
     },
 ];
 
