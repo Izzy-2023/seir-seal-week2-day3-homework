@@ -107,3 +107,14 @@ function gasLawnmower() {
         Your account is now $${account}.`);
     }
 }
+function buyStudents() {
+    if (moneyInAccount < 500) {
+        alert(`Sorry, you don't have enough money to buy tools yet. You can use your ${tools[3].type} to cut lawns for $${tools[3].pay}.`);
+    }  else if (moneyInAccount >= 500) {
+        document.getElementById('gas-lawn');
+        moneyInAccount.splice(0, 1, account -= 500);
+        myTool = tools[4].type;
+        alert(`You have selected ${tools[4].type} as your tool. You can now cut lawns for $${tools[4].pay} an hour! 
+        Your account is now $${account}.`);
+    }
+}
