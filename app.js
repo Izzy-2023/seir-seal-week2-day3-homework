@@ -52,6 +52,18 @@ function hundredDollar() {
         alert("You have earned enough money to upgrade your equipment! Visit the market to earn even faster.")
     }
 }
+function twoFiftyDollar() {
+    if (account < 500 && myTool === 'Students') {
+        account += 250;
+        moneyInAccount.splice(0, 1, account);
+        alert(`Great job! You have earned $${account} cutting lawns today! 
+        Your account is now $${account}.`);
+    } else if (myTool !== 'Students') {
+        alert("You don't own the tool that will pay you that much. Keep mowing!")
+    } else if (account < 1000) {
+        alert("Congratulations! You have won the game.")
+    }
+}
 
 // Tool options for the player.
 let tools = [
