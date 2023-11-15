@@ -36,10 +36,13 @@ let tools = [
     {   type: "Rusty Scissors",
         pay: 5,
     },
+    {   type: "Push Lawnmower",
+        pay: 25,
+    },
 ];
 
 let myTool = "";
-function buyScissors() {
+function rustyScissors() {
     if (moneyInAccount < 5) {
         alert(`Sorry, you don't have enough money to buy this tool. You can use your ${tools[0].type} to cut lawns for $${tools[0].pay}.`);
     } else if (moneyInAccount >= 5) {
@@ -52,4 +55,15 @@ function buyScissors() {
         alert(`You need more money to buy this tool, keep on mowing!`);
     }
 
+}
+function pushLawnmower() {
+    if (moneyInAccount < 25) {
+        alert(`Sorry, you don't have enough money to buy tools yet. You can use your ${tools[1].type} to cut lawns for $${tools[1].pay}.`);
+    }  else if (moneyInAccount >= 25) {
+        document.getElementById('push-lawn');
+        moneyInAccount.splice(0, 1, account -= 25);
+        myTool = tools[2].type;
+        alert(`You have selected ${tools[2].type} as your tool. You can now cut lawns for $${tools[2].pay} an hour! 
+        Your account is now $${account}.`);
+    }
 }
